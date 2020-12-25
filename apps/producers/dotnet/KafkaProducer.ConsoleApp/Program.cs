@@ -11,7 +11,7 @@ namespace KafkaProducer.ConsoleApp
         {
             var config = new ProducerConfig
             {
-                BootstrapServers = "localhost:29092"
+                BootstrapServers = "localhost:9091,localhost:9092,localhost:9093"
             };
 
             string topic = args[0];
