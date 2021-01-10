@@ -2,7 +2,7 @@
 
 ## Resumo
 
-Estudos de um kafka cluster, executado em ambiente Docker, com 3 nós e comandos via terminal para envio e recebimento de mensagens =)
+Estudos de um kafka cluster, executado em ambiente Docker, com 3 nós e comandos via terminal para envio e recebimento de mensagens
 
 ## Tutoriais
 
