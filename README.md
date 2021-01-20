@@ -35,6 +35,9 @@ Abaixos comandos para interagir com o cluster Kafka rodando em Docker
     # Alterar Partições de um Tópico
     kafka-topics --alter --bootstrap-server kafka1:19091 --topic orders-order-created --partitions 10
 
+    # Deletar Topico
+    kafka-topics --bootstrap-server kafka1:19091 --delete --topic someTopic
+
 # Producer
 
     # Iniciar um produtor de mensagens
