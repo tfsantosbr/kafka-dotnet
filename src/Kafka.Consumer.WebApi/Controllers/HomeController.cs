@@ -4,11 +4,11 @@ namespace Kafka.Consumer.WebApi.Controllers;
 
 [ApiController]
 [Route("home")]
-public class WeatherForecastController : ControllerBase
+public class HomeController : ControllerBase
 {
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILogger<HomeController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
     }

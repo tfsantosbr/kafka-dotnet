@@ -1,8 +1,13 @@
+using Kafka.Consumer.WebApi.Consumers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// registering kafka consumer as Hosted Service
+builder.Services.AddHostedService<ApacheKafkaConsumerService>();
 
 var app = builder.Build();
 

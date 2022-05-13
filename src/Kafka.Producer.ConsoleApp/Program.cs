@@ -14,7 +14,7 @@ namespace Kafka.Producer.ConsoleApp
                 BootstrapServers = "host.docker.internal:9092"
             };
 
-            string topic = args[0];
+            string topic = "meutopico";
             string input = null;
 
             Console.WriteLine("Iniciando produtor de mensagens...");

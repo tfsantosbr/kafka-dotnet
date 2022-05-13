@@ -8,8 +8,8 @@ namespace Kafka.Consumer.ConsoleApp
     {
         static void Main(string[] args)
         {
-            string topic = args[0];
-            string groupId = args[1];
+            string topic = "meutopico";
+            string groupId = "consumer-consoleapp";
 
             var conf = new ConsumerConfig
             {

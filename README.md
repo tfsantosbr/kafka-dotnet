@@ -4,10 +4,12 @@
 
 Estudos de um kafka cluster, executado em ambiente Docker, com 3 nós e comandos via terminal para envio e recebimento de mensagens
 
-## Tutoriais
+## Tutoriais e Exemplos
 
 https://www.youtube.com/watch?v=PppMhofKzy4
 https://medium.com/better-programming/a-simple-apache-kafka-cluster-with-docker-kafdrop-and-python-cf45ab99e2b9
+https://www.codemag.com/Article/2201061/Working-with-Apache-Kafka-in-ASP.NET-6-Core
+https://github.com/confluentinc/confluent-kafka-dotnet/blob/master/examples/Web/RequestTimeConsumer.cs
 
 ## Links
 
@@ -74,3 +76,4 @@ dotnet run -p apps/producers/dotnet/KafkaProducer.ConsoleApp "meutopico"
 # Executando um consumer .NET Console App
 dotnet run -p apps/consumers/dotnet/KafkaConsumer.ConsoleApp "meutopico" "grupo-a"
 ```
+
