@@ -14,7 +14,7 @@ namespace Kafka.Consumer.ConsoleApp
             var conf = new ConsumerConfig
             {
                 GroupId = groupId,
-                BootstrapServers = "localhost:9091,localhost:9092,localhost:9093",
+                BootstrapServers = "host.docker.internal:9092",
                 AutoOffsetReset = AutoOffsetReset.Latest
             };
 

@@ -11,7 +11,7 @@ namespace Kafka.Producer.ConsoleApp
         {
             var config = new ProducerConfig
             {
-                BootstrapServers = "localhost:9091,localhost:9092,localhost:9093"
+                BootstrapServers = "host.docker.internal:9092"
             };
 
             string topic = args[0];
@@ -41,10 +41,10 @@ namespace Kafka.Producer.ConsoleApp
                 new Message<Null, string>
                 { Value = message });
 
-            // Console.WriteLine($"[Mensagem Enviada] \n" +
-            //     $"Topico: {topic} \n" +
-            //     $"Mensagem: {message} \n" +
-            //     $"Status: {result.Status}");
+            Console.WriteLine($"[Mensagem Enviada] \n" +
+                $"Topico: {topic} \n" +
+                $"Mensagem: {message} \n" +
+                $"Status: {result.Status}");
         }
     }
 }
