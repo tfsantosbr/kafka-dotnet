@@ -3,7 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Confluent.Kafka;
 
-namespace KafkaProducer.ConsoleApp
+namespace Kafka.Producer.ConsoleApp
 {
     class Program
     {

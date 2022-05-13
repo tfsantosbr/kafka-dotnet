@@ -2,7 +2,7 @@
 using System.Threading;
 using Confluent.Kafka;
 
-namespace KafkaConsumer.ConsoleApp
+namespace Kafka.Consumer.ConsoleApp
 {
     class Program
     {
