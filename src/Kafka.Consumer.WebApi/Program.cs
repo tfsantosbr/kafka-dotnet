@@ -7,7 +7,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // registering kafka consumer as Hosted Service
-builder.Services.AddHostedService<ApacheKafkaConsumerService>();
+builder.Services.AddHostedService<ApacheKafkaConsumer>();
 
 var app = builder.Build();
 

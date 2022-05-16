@@ -2,14 +2,14 @@ using Confluent.Kafka;
 
 namespace Kafka.Consumer.WebApi.Consumers;
 
-public class ApacheKafkaConsumerService : BackgroundService
+public class ApacheKafkaConsumer : BackgroundService
 {
     private readonly string _topic = "meutopico";
     private readonly string _groupId = "consumer-webapi";
     private readonly string _bootstrapServers = "host.docker.internal:9092";
-    private readonly ILogger<ApacheKafkaConsumerService> _logger;
+    private readonly ILogger<ApacheKafkaConsumer> _logger;
 
-    public ApacheKafkaConsumerService(ILogger<ApacheKafkaConsumerService> logger)
+    public ApacheKafkaConsumer(ILogger<ApacheKafkaConsumer> logger)
     {
         _logger = logger;
     }
